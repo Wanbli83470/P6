@@ -1,13 +1,17 @@
 1 introduction :
-Le diagramme de composants permet d'identifier graphiquement les différents composants concrets, techniques internes et externes à votre site web de pizzeria. 
+Le diagramme de composants permet d'identifier graphiquement les différents composants concrets, techniques internes et externes à votre site web de pizzeria. Ils contienneent par exemple les exécutables, les bibliothèques, les fichiers. Mais aussi des données comme la base de données.
+On révèle ici en évidence les dépendances (d'utilisations entre ces composants)
 
 
 2 Développement :
-Ces mêmes composants sont répertoriés en 2 grands systèmes de composantes tiers et Serveur? Ces deux-ci intéragissent entre elles. En effet le serveur et le Back-end (c'est à dire la surface invisible mais nécéssaire au fonctionnement de votre programme, fournissant l'interaction entre les données entrantes et sortantes) sont contenues un grand composant "Serveur". 
-De l'autre côté on retrouve le navigateur clients affichant les informations après interpration du code HTML fournie par le Back End. Enfin on trouve aussi l'API Google maps et du paiement intéragissant avec le système principal. 
+Ces mêmes composants sont répertoriés en 2 grands systèmes de composants : 1 les composants tiers et 2 les programmes serveurs. Ces grands paquets interagissent ensemble et s'échangent des informations dynamiquement pour les fournir ensuite à l'utilisateur.
 
-Techniquement votre base de données est gérés par un ORM propre au Framework Django du langage Python. Cet ORM (object-relational mapping) simule une base de données relationnelles orientés objet, comme vue précédement dans le diagramme de classe.
+En effet le serveur et le Back-end (c'est-à-dire la surface invisible mais nécessaire au fonctionnement de votre programme, fournissant l'interaction entre les données entrantes et sortantes) sont contenus dans un grand composant "Serveur".
+ 
+De l'autre côté on retrouve le navigateur clients affichant les informations après interpration du code HTML fournie par le Back End. l'API Google maps et du paiement font aussi partie de cet exemples car ils sont extérieurs au système principal. 
+
+Techniquement votre base de données est gérés par un ORM propre au Framework Django du langage Python. Cet ORM (object-relational mapping) simule une base de données relationnelles orientés objet, comme vue précédement dans le diagramme de classe. La bases de données POSTREGRESQL communique avec L'ORM
 
 
 3 Conclusion : 
-Ces composants ici détaillés en détail sont de nouveaux présents dans le déploiement que vous trouverez dans le chapitre suivant.
+Ces composants ici détaillés en détail sont de nouveaux présents dans le déploiement de ces composants expliqué dans la page suivante.
