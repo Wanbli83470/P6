@@ -31,3 +31,14 @@ C'est le serveur qui fourni le "flux html" nécéssaire au dynamisme du site en 
 Les deux API envoi respectivement des autorisations bancaire ou bien des données de localisation.
 
 
+
+Voici le diagramme de déploiement, celui-ci sensiblement simmilaire au diagramme de composant, mais est oragnisé en grandes boites contenant les composants et je me suis permis d'ajouter une imprimante local à la pizzeria qui permettre donc d'imprimer le fichier pdf automatiquement générer une fois la facture enregistré et validé.
+On peut notamment voir deux 2 types communiquant avec le serveur ces deux types pourrait être par exemple l'application mobile et le site web initial en ligne. L'application mobile pourrait être très utile aux livreurs et éventuellement même aux clients désireux de suivre ou passer leur commande avant de rentrer à leur domicile.
+
+Pour finir la présentation du dossier, voici le modèle physique de données découlant du diagramme de classe, il différe de ce dernier sur quelques points :
+l'ajout des clefs primaire et étrangères.
+Le rôle de index.
+la précision du types de données utilisé (varchar, integer, char...)
+
+les clefs étrangères permettent d'éviter les doublons et assure le référencement entre deux tables, on en retrouve dans presque toutes les tables, par exemple l'ID d'un client est référencé dans la table facture par une collone client_ID.
+Les index permettent d'assurer les performances et l'optimisation de la BDD.
